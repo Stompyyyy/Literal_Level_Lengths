@@ -46,7 +46,7 @@ jobs:
     needs: ['build']
 
     steps:
-      - uses: geode-sdk/build-geode-mod/combine@v1
+      - uses: RoootTheFox/build-geode-mod@v1
         id: build
 
       - uses: actions/upload-artifact@v3
