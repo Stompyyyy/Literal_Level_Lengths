@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "wa"
+      - "**"
 
 jobs:
   build:
@@ -48,7 +48,7 @@ jobs:
     needs: ['build']
 
     steps:
-      - uses: RoootTheFox/build-geode-mod@v1
+      - uses: RoootTheFox/build-geode-mod@combine
         id: build
 
       - uses: actions/upload-artifact@v3
