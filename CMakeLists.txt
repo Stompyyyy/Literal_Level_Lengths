@@ -5,7 +5,7 @@ set(CMAKE_OSX_ARCHITECTURES "x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
 if(APPLE)
-    project(ProfileBio VERSION 1.0.0 LANGUAGES CXX OBJCXX)
+    project(LiteralLevelLengths VERSION 1.0.0)
     
     if(${GEODE_TARGET_PLATFORM} STREQUAL "iOS")
         message(STATUS "building for ios :3c")
@@ -16,7 +16,7 @@ if(APPLE)
 		add_compile_definitions(TARGET_OS_IOS)
     endif()
 else()
-    project(ProfileBio VERSION 1.0.0)
+    project(LiteralLevelLenghths VERSION 1.0.0)
 endif()
 
 file(GLOB SOURCES
